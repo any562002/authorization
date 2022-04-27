@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<point xmlns="http://v8.1c.ru/8.2/virtual-resource-system"
+		xmlns:xs="http://www.w3.org/2001/XMLSchema"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		base="/Test"
+		ib="File=&quot;C:\Users\User\Documents\InfoBase34&quot;;">
+	<debug enable="true"
+			protocol="tcp"
+			url="tcp://WIN-M8N2BS22PV1:1560"/>
+	<ws enable="false"
+			pointEnableCommon="false"/>
+	<standardOdata enable="true"
+			reuseSessions="autouse"
+			sessionMaxAge="20"
+			poolSize="10"
+			poolTimeout="5"/>
+	<analytics enable="true"/>
+	<httpServices>
+		<service name="Test"
+				rootUrl="Test"
+				enable="true"
+				reuseSessions="autouse"
+				sessionMaxAge="20"
+				poolSize="10"
+				poolTimeout="5"/>
+	</httpServices>
+</point>
